@@ -3,13 +3,14 @@
 ## How to up the new project
 
 1. `git clone https://github.com/soft-industry/WP-Docker-Boilerplate.git`
-2. `docker-compose bild`
+2. `docker-compose build`
 3. `docker-compose up -d`
+4. `sudo sh fix-wp-permission.sh web` after you typing your username in the file. Then eject changes
 
 ## How to up an existing project
 
 
 1. `git clone <your-project-repository>`
-2. `docker-compose bild`
+2. `docker-compose build`
 3. `docker-compose up -d`
 
