@@ -14,3 +14,14 @@
 2. `docker-compose build`
 3. `docker-compose up -d`
 
+
+## Command reference
+
+* `docker-compose exec db bash` will open shell on the running db container.
+* `docker-compose stop` will stop running containers.
+* `docker-compose rm db` will erase built db container. So when you run `docker-compose up` it will be built again, and the initial dump will apply.
+* `$ docker exec some-mysql-contaner sh -c 'exec mysqldump -uroot -p"$MYSQL_ROOT_PASSWORD" db_name' > /some/path/on/your/host/db_name.sql` will make dump from `some-mysql-contaner` and database `db_name` into local file
+
+## To install docker compose
+
+https://docs.docker.com/compose/install/
